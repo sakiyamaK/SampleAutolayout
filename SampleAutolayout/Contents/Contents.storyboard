@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VaK-w7-vYU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Contents View Controller-->
+        <scene sceneID="j8q-Ao-hNF">
+            <objects>
+                <viewController storyboardIdentifier="ContentsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VaK-w7-vYU" customClass="ContentsViewController" customModule="SampleAutolayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Cq-BT-Gvy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y1W-Lf-Fa6">
+                                <rect key="frame" x="0.0" y="44" width="414" height="403"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="750" horizontalCompressionResistancePriority="749" text="左のラベルです左のラベルです左のラベルです左のラベルです左のラベルです左のラベルです左のラベルです左のラベルです左のラベルです" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CN9-gP-JiM" userLabel="LeftLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="299.5" height="403"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="250" text="右のラベルです" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y93-yl-pGS" userLabel="RightLabel">
+                                        <rect key="frame" x="299.5" y="0.0" width="114.5" height="403"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="Y93-yl-pGS" firstAttribute="top" secondItem="y1W-Lf-Fa6" secondAttribute="top" id="5YV-An-QTc"/>
+                                    <constraint firstItem="CN9-gP-JiM" firstAttribute="leading" secondItem="y1W-Lf-Fa6" secondAttribute="leading" id="Cvq-u6-C5E"/>
+                                    <constraint firstAttribute="trailing" secondItem="Y93-yl-pGS" secondAttribute="trailing" id="YeM-0d-TYM"/>
+                                    <constraint firstAttribute="bottom" secondItem="Y93-yl-pGS" secondAttribute="bottom" id="cbc-L7-5KX"/>
+                                    <constraint firstItem="Y93-yl-pGS" firstAttribute="leading" secondItem="CN9-gP-JiM" secondAttribute="trailing" id="kdH-Fk-E9d"/>
+                                    <constraint firstItem="CN9-gP-JiM" firstAttribute="top" secondItem="y1W-Lf-Fa6" secondAttribute="top" id="miq-og-5yg"/>
+                                    <constraint firstAttribute="bottom" secondItem="CN9-gP-JiM" secondAttribute="bottom" id="uOT-LS-64A"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="y1W-Lf-Fa6" firstAttribute="top" secondItem="dEq-zK-bGP" secondAttribute="top" id="0pO-Lu-U6l"/>
+                            <constraint firstItem="y1W-Lf-Fa6" firstAttribute="leading" secondItem="dEq-zK-bGP" secondAttribute="leading" id="C2G-dU-mMy"/>
+                            <constraint firstItem="y1W-Lf-Fa6" firstAttribute="height" secondItem="8Cq-BT-Gvy" secondAttribute="height" multiplier="0.45" id="fgs-NE-bCH"/>
+                            <constraint firstItem="y1W-Lf-Fa6" firstAttribute="trailing" secondItem="dEq-zK-bGP" secondAttribute="trailing" id="mJY-2M-g19"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dEq-zK-bGP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Egf-xD-m3E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="156.69642857142856"/>
+        </scene>
+    </scenes>
+</document>
