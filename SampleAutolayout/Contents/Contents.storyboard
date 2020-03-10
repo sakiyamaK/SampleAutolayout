@@ -19,15 +19,15 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y1W-Lf-Fa6">
                                 <rect key="frame" x="0.0" y="44" width="414" height="403"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="750" horizontalCompressionResistancePriority="749" text="左のラベルです左のラベルです左のラベルです左のラベルです左のラベルです左のラベルです左のラベルです左のラベルです左のラベルです" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CN9-gP-JiM" userLabel="LeftLabel">
-                                        <rect key="frame" x="0.0" y="0.0" width="299.5" height="403"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="750" horizontalCompressionResistancePriority="748" text="左のラベルです左のラベルです左のラベルです左のラベルです左のラベルです左のラベルです左のラベルです左のラベルです左のラベルです" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CN9-gP-JiM" userLabel="LeftLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="403"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="250" text="右のラベルです" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y93-yl-pGS" userLabel="RightLabel">
-                                        <rect key="frame" x="299.5" y="0.0" width="114.5" height="403"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="右のラベルです右のラベルです右のラベルです右のラベルです右のラベルです右のラベルです右のラベルです右のラベルです右のラベルです右のラベルです右のラベルです右のラベルです右のラベルです" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y93-yl-pGS" userLabel="RightLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="403"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <nil key="textColor"/>
@@ -45,12 +45,24 @@
                                     <constraint firstAttribute="bottom" secondItem="CN9-gP-JiM" secondAttribute="bottom" id="uOT-LS-64A"/>
                                 </constraints>
                             </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HGV-C9-stR">
+                                <rect key="frame" x="0.0" y="455" width="414" height="407"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="y1W-Lf-Fa6" firstAttribute="top" secondItem="dEq-zK-bGP" secondAttribute="top" id="0pO-Lu-U6l"/>
                             <constraint firstItem="y1W-Lf-Fa6" firstAttribute="leading" secondItem="dEq-zK-bGP" secondAttribute="leading" id="C2G-dU-mMy"/>
+                            <constraint firstItem="HGV-C9-stR" firstAttribute="leading" secondItem="dEq-zK-bGP" secondAttribute="leading" id="FL7-aQ-RuP"/>
+                            <constraint firstItem="HGV-C9-stR" firstAttribute="top" secondItem="y1W-Lf-Fa6" secondAttribute="bottom" constant="8" symbolic="YES" id="Wto-li-WFZ"/>
                             <constraint firstItem="y1W-Lf-Fa6" firstAttribute="height" secondItem="8Cq-BT-Gvy" secondAttribute="height" multiplier="0.45" id="fgs-NE-bCH"/>
+                            <constraint firstItem="dEq-zK-bGP" firstAttribute="bottom" secondItem="HGV-C9-stR" secondAttribute="bottom" id="gVq-MB-5Hp"/>
+                            <constraint firstItem="dEq-zK-bGP" firstAttribute="trailing" secondItem="HGV-C9-stR" secondAttribute="trailing" id="hSM-XP-m6o"/>
                             <constraint firstItem="y1W-Lf-Fa6" firstAttribute="trailing" secondItem="dEq-zK-bGP" secondAttribute="trailing" id="mJY-2M-g19"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dEq-zK-bGP"/>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KYw-Se-TzA">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Zp1-Ug-YdO">
+            <objects>
+                <viewController id="KYw-Se-TzA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rWQ-bQ-brz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xAU-uE-C9o">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aaf-0c-dSl">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="405"/>
+                                        <state key="normal" title="NoReference"/>
+                                        <connections>
+                                            <segue destination="ZgD-UV-E4b" kind="show" id="Eqc-VK-uQM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmd-al-h3A">
+                                        <rect key="frame" x="0.0" y="413" width="414" height="405"/>
+                                        <state key="normal" title="Reference"/>
+                                        <connections>
+                                            <segue destination="Z9S-yi-qi4" kind="show" id="p5X-gY-uwz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xAU-uE-C9o" firstAttribute="top" secondItem="22e-z7-Xfg" secondAttribute="top" id="CCc-6Q-3Vh"/>
+                            <constraint firstItem="xAU-uE-C9o" firstAttribute="leading" secondItem="22e-z7-Xfg" secondAttribute="leading" id="PUn-J8-eHO"/>
+                            <constraint firstItem="22e-z7-Xfg" firstAttribute="bottom" secondItem="xAU-uE-C9o" secondAttribute="bottom" id="Uul-xH-mCj"/>
+                            <constraint firstItem="22e-z7-Xfg" firstAttribute="trailing" secondItem="xAU-uE-C9o" secondAttribute="trailing" id="iYk-f1-yI4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="22e-z7-Xfg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aJ4-3i-uNs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GZS-tD-0Gj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9" y="113"/>
+        </scene>
+        <!--Ref1-->
+        <scene sceneID="beb-Ln-Kg0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Ref1" id="Z9S-yi-qi4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="0qG-K5-PTi"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jei-ec-RMg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="534" y="224"/>
+        </scene>
+        <!--NoRef-->
+        <scene sceneID="qYP-rV-LBI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NoRef" id="ZgD-UV-E4b" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="o8R-GP-SfI"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gNy-6s-NE6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="544" y="-69"/>
+        </scene>
+    </scenes>
+</document>
