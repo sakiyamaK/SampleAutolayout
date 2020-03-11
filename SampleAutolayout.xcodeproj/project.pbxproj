@@ -16,6 +16,9 @@
 		B60D1BF82417FF2B0054EC41 /* ContainerSub2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60D1BF72417FF2B0054EC41 /* ContainerSub2.storyboard */; };
 		B60D1BFA241800380054EC41 /* ContainerSub1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60D1BF9241800380054EC41 /* ContainerSub1ViewController.swift */; };
 		B60D1BFC241800470054EC41 /* ContainerSub2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60D1BFB241800470054EC41 /* ContainerSub2ViewController.swift */; };
+		B60D1BFF2419203E0054EC41 /* Constraints.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60D1BFE2419203E0054EC41 /* Constraints.storyboard */; };
+		B60D1C012419204B0054EC41 /* NoStoryboardConstraintsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60D1C002419204B0054EC41 /* NoStoryboardConstraintsViewController.swift */; };
+		B60D1C03241929020054EC41 /* Test.xib in Resources */ = {isa = PBXBuildFile; fileRef = B60D1C02241929020054EC41 /* Test.xib */; };
 		B66B56E7240E8F1000A9D565 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66B56E6240E8F1000A9D565 /* AppDelegate.swift */; };
 		B66B56EB240E8F1000A9D565 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66B56EA240E8F1000A9D565 /* ViewController.swift */; };
 		B66B56EE240E8F1000A9D565 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66B56EC240E8F1000A9D565 /* Main.storyboard */; };
@@ -59,6 +62,9 @@
 		B60D1BF72417FF2B0054EC41 /* ContainerSub2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContainerSub2.storyboard; sourceTree = "<group>"; };
 		B60D1BF9241800380054EC41 /* ContainerSub1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerSub1ViewController.swift; sourceTree = "<group>"; };
 		B60D1BFB241800470054EC41 /* ContainerSub2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerSub2ViewController.swift; sourceTree = "<group>"; };
+		B60D1BFE2419203E0054EC41 /* Constraints.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Constraints.storyboard; sourceTree = "<group>"; };
+		B60D1C002419204B0054EC41 /* NoStoryboardConstraintsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoStoryboardConstraintsViewController.swift; sourceTree = "<group>"; };
+		B60D1C02241929020054EC41 /* Test.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Test.xib; sourceTree = "<group>"; };
 		B66B56E3240E8F1000A9D565 /* SampleAutolayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleAutolayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66B56E6240E8F1000A9D565 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B66B56EA240E8F1000A9D565 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -141,8 +147,18 @@
 				B60D1BF9241800380054EC41 /* ContainerSub1ViewController.swift */,
 				B60D1BF72417FF2B0054EC41 /* ContainerSub2.storyboard */,
 				B60D1BFB241800470054EC41 /* ContainerSub2ViewController.swift */,
+				B60D1C02241929020054EC41 /* Test.xib */,
 			);
 			path = ContainerView;
+			sourceTree = "<group>";
+		};
+		B60D1BFD2419201D0054EC41 /* NoStoryboardConstraints */ = {
+			isa = PBXGroup;
+			children = (
+				B60D1BFE2419203E0054EC41 /* Constraints.storyboard */,
+				B60D1C002419204B0054EC41 /* NoStoryboardConstraintsViewController.swift */,
+			);
+			path = NoStoryboardConstraints;
 			sourceTree = "<group>";
 		};
 		B66B56DA240E8F1000A9D565 = {
@@ -168,6 +184,7 @@
 		B66B56E5240E8F1000A9D565 /* SampleAutolayout */ = {
 			isa = PBXGroup;
 			children = (
+				B60D1BFD2419201D0054EC41 /* NoStoryboardConstraints */,
 				B60D1BF22417FEEC0054EC41 /* ContainerView */,
 				B60D1BE72417FC330054EC41 /* StoryboardRef */,
 				B66B571E240EB1A200A9D565 /* Scroll */,
@@ -353,10 +370,12 @@
 				B66B5718240E8F7400A9D565 /* Contents.storyboard in Resources */,
 				B60D1BF12417FE390054EC41 /* Ref2.storyboard in Resources */,
 				B60D1BEF2417FE320054EC41 /* Ref1.storyboard in Resources */,
+				B60D1BFF2419203E0054EC41 /* Constraints.storyboard in Resources */,
 				B60D1BEC2417FC970054EC41 /* NoRef.storyboard in Resources */,
 				B66B571D240EABE300A9D565 /* LabelImage.storyboard in Resources */,
 				B66B56F3240E8F1200A9D565 /* LaunchScreen.storyboard in Resources */,
 				B60D1BF42417FF010054EC41 /* ContainerMain.storyboard in Resources */,
+				B60D1C03241929020054EC41 /* Test.xib in Resources */,
 				B60D1BF82417FF2B0054EC41 /* ContainerSub2.storyboard in Resources */,
 				B66B5720240EB2D100A9D565 /* HorizontalScroll.storyboard in Resources */,
 				B60D1BF62417FF0B0054EC41 /* ContainerSub1.storyboard in Resources */,
@@ -388,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B66B56EB240E8F1000A9D565 /* ViewController.swift in Sources */,
+				B60D1C012419204B0054EC41 /* NoStoryboardConstraintsViewController.swift in Sources */,
 				B66B56E7240E8F1000A9D565 /* AppDelegate.swift in Sources */,
 				B66B571A240E8F7F00A9D565 /* ContentsViewController.swift in Sources */,
 				B60D1BFC241800470054EC41 /* ContainerSub2ViewController.swift in Sources */,

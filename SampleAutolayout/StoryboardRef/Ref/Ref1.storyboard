@@ -29,7 +29,7 @@
                                         <rect key="frame" x="0.0" y="438" width="394" height="438"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <segue destination="hj0-2u-2rL" kind="show" id="IqX-h9-TR9"/>
+                                            <segue destination="hj0-2u-2rL" kind="show" id="Abh-4N-E4L"/>
                                         </connections>
                                     </button>
                                 </subviews>
