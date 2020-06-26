@@ -17,11 +17,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yJU-sx-ef4" userLabel="TopView">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="200.66666666666666"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpG-H4-5uf" userLabel="TestLabel">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="200.66666666666666"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" text="ABCDEFG" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpG-H4-5uf" userLabel="TestLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="24"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -29,9 +30,10 @@
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="cpG-H4-5uf" firstAttribute="leading" secondItem="yJU-sx-ef4" secondAttribute="leading" id="2Vf-nj-AE2"/>
+                                    <constraint firstAttribute="bottom" secondItem="cpG-H4-5uf" secondAttribute="bottom" priority="750" id="KR2-gd-seH"/>
                                     <constraint firstAttribute="trailing" secondItem="cpG-H4-5uf" secondAttribute="trailing" id="TLM-Kl-yGn"/>
+                                    <constraint firstAttribute="height" constant="100" id="Xa7-EJ-e7w"/>
                                     <constraint firstItem="cpG-H4-5uf" firstAttribute="top" secondItem="yJU-sx-ef4" secondAttribute="top" id="ZHd-rU-wqA"/>
-                                    <constraint firstAttribute="bottom" secondItem="cpG-H4-5uf" secondAttribute="bottom" id="ixl-8J-zDj"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pkG-sv-Jx0" userLabel="BottomView">
@@ -65,7 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eM7-Dz-Jx3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="24.637681159420293" y="159.375"/>
+            <point key="canvasLocation" x="24.637681159420293" y="158.96739130434784"/>
         </scene>
     </scenes>
     <resources>
