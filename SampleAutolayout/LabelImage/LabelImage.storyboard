@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,15 +20,15 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yJU-sx-ef4" userLabel="TopView">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" text="ABCDEFG" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpG-H4-5uf" userLabel="TestLabel">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="24"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="ABCDEFG" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpG-H4-5uf" userLabel="TestLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="25.333333333333332"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
                                     <constraint firstItem="cpG-H4-5uf" firstAttribute="leading" secondItem="yJU-sx-ef4" secondAttribute="leading" id="2Vf-nj-AE2"/>
                                     <constraint firstAttribute="bottom" secondItem="cpG-H4-5uf" secondAttribute="bottom" priority="750" id="KR2-gd-seH"/>
@@ -43,7 +44,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="331.33333333333331"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="X6s-ea-NSs" secondAttribute="bottom" id="95K-gR-Rhg"/>
                                     <constraint firstItem="X6s-ea-NSs" firstAttribute="leading" secondItem="pkG-sv-Jx0" secondAttribute="leading" id="9yR-mW-KR9"/>
@@ -52,7 +53,8 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="dN2-2U-qjr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="yJU-sx-ef4" firstAttribute="leading" secondItem="dN2-2U-qjr" secondAttribute="leading" id="4Gf-b2-Ir3"/>
                             <constraint firstItem="pkG-sv-Jx0" firstAttribute="leading" secondItem="dN2-2U-qjr" secondAttribute="leading" id="6WE-Hh-aVa"/>
@@ -62,7 +64,6 @@
                             <constraint firstItem="dN2-2U-qjr" firstAttribute="top" secondItem="yJU-sx-ef4" secondAttribute="top" id="h0A-dC-zdH"/>
                             <constraint firstItem="pkG-sv-Jx0" firstAttribute="bottom" secondItem="dN2-2U-qjr" secondAttribute="bottom" id="mKu-7s-DYs"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="dN2-2U-qjr"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eM7-Dz-Jx3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -72,5 +73,17 @@
     </scenes>
     <resources>
         <image name="test" width="73.333335876464844" height="28.333333969116211"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
