@@ -18,17 +18,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y1W-Lf-Fa6">
-                                <rect key="frame" x="0.0" y="44" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" ambiguous="YES" text="左のラベルです左のラベルです左のラベルです左のラベルです左のラベルです左のラベルです左のラベルです左のラベルです左のラベルです" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CN9-gP-JiM" userLabel="LeftLabel">
-                                        <rect key="frame" x="0.0" y="0.0" width="202" height="896"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="205" height="818"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" ambiguous="YES" text="右のラベルです右のラベルです右のラベルです右のラベルです右のラベルです右のラベルです右のラベルです右のラベルです右のラベルです右のラベルです右のラベルです右のラベルです右のラベルです" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y93-yl-pGS" userLabel="RightLabel">
-                                        <rect key="frame" x="204" y="0.0" width="210" height="896"/>
+                                        <rect key="frame" x="220" y="0.0" width="194" height="818"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <nil key="textColor"/>
@@ -52,7 +52,7 @@
                         <constraints>
                             <constraint firstItem="y1W-Lf-Fa6" firstAttribute="top" secondItem="dEq-zK-bGP" secondAttribute="top" id="0pO-Lu-U6l"/>
                             <constraint firstItem="y1W-Lf-Fa6" firstAttribute="leading" secondItem="dEq-zK-bGP" secondAttribute="leading" id="C2G-dU-mMy"/>
-                            <constraint firstItem="y1W-Lf-Fa6" firstAttribute="height" secondItem="8Cq-BT-Gvy" secondAttribute="height" id="fgs-NE-bCH"/>
+                            <constraint firstItem="y1W-Lf-Fa6" firstAttribute="height" secondItem="dEq-zK-bGP" secondAttribute="height" id="fgs-NE-bCH"/>
                             <constraint firstItem="y1W-Lf-Fa6" firstAttribute="trailing" secondItem="dEq-zK-bGP" secondAttribute="trailing" id="mJY-2M-g19"/>
                         </constraints>
                     </view>
